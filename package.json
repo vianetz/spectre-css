@@ -1,13 +1,13 @@
 {
   "name": "spectre.css",
   "version": "0.5.9",
-  "homepage": "http://picturepan2.github.io/spectre",
+  "homepage": "https://vianetz.github.io/spectre-css",
   "author": "Yan Zhu <picturepan2@hotmail.com>",
   "description": "Spectre.css: A lightweight, responsive and modern CSS framework",
   "main": "dist/spectre.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/picturepan2/spectre.git"
+    "url": "https://github.com/vianetz/spectre-css.git"
   },
   "license": "MIT",
   "keywords": [
@@ -21,9 +21,10 @@
     "modern"
   ],
   "bugs": {
-    "url": "https://github.com/picturepan2/spectre/issues"
+    "url": "https://github.com/vianetz/spectre-css/issues"
   },
   "devDependencies": {
+    "bundlesize": "^0.18.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
@@ -43,5 +44,14 @@
     "last 4 Safari versions",
     "last 4 Opera versions",
     "Explorer >= 10"
+  ],
+  "scripts": {
+    "test": "bundlesize"
+  },
+  "bundlesize": [
+    {
+      "path": "./dist/spectre.min.css",
+      "maxSize": "10 kB"
+    }
   ]
 }
