@@ -32,7 +32,7 @@
     "gulp-pug": "^5.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
-    "jstransformer-highlight": "^2.0.0",
+    "jstransformer-highlight": "github:vast/jstransformer-highlight",
     "jstransformer-markdown-it": "^2.1.0",
     "sass": "^1.68.0",
     "sass-migrator": "^1.7.3"

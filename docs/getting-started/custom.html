@@ -255,7 +255,7 @@
 </code></pre>
             <h4 class="s-subtitle" id="folders">Folder structure<a class="anchor" href="#folders" aria-hidden="true">#</a></h4>
             <pre class="code"><code>spectre/
-├── <span class="hljs-built_in">dist</span>/                           <span class="hljs-comment">// Build folder</span>
+├── dist/                           <span class="hljs-comment">// Build folder</span>
 │   ├── spectre-<span class="hljs-built_in">exp</span>.css
 │   ├── spectre-<span class="hljs-built_in">exp</span>.<span class="hljs-built_in">min</span>.css
 │   ├── spectre-icons.css
@@ -264,7 +264,7 @@
 │   └── spectre.<span class="hljs-built_in">min</span>.css
 │
 ├── docs/
-│   ├── <span class="hljs-built_in">dist</span>/                       <span class="hljs-comment">// Pre-built CSS folder</span>
+│   ├── dist/                       <span class="hljs-comment">// Pre-built CSS folder</span>
 │   │   ├── spectre-<span class="hljs-built_in">exp</span>.css
 │   │   ├── spectre-<span class="hljs-built_in">exp</span>.<span class="hljs-built_in">min</span>.css
 │   │   ├── spectre-icons.css
@@ -276,12 +276,12 @@
 |   ├── src/
 │   │   ├── scss                    <span class="hljs-comment">// Docs Sass files</span>
 │   │   │   └── docs.scss
-│   │   ├── index.pug               <span class="hljs-comment">// Docs Pug files</span>
+│   │   ├── <span class="hljs-keyword">index</span>.pug               <span class="hljs-comment">// Docs Pug files</span>
 │   │   └── ...
 │   ├── examples/                   <span class="hljs-comment">// Example tempalte</span>
 │   │   └── starter.html
 │   ├── ../
-│   ├── index.html
+│   ├── <span class="hljs-keyword">index</span>.html
 │   └── ...
 │
 ├── src/                            <span class="hljs-comment">// Source Sass files</span>
@@ -293,7 +293,7 @@
 │   └── ...
 │
 ├── gulpfile.js
-├── <span class="hljs-keyword">package</span>.json
+├── package.json
 └── ...
 </code></pre>
             <h4 class="s-subtitle" id="variables">Variables<a class="anchor" href="#variables" aria-hidden="true">#</a></h4>
@@ -392,14 +392,14 @@
             <p>To add <code>spectre-</code> to all classes, you can add the Gulp task to <code>gulpfile.js</code> file.</p>
             <pre class="code"><code><span class="hljs-keyword">var</span> cssPrefix = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-css-prefix'</span>);
 
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">prefix</span>(<span class="hljs-params"></span>) </span>{
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">prefix</span>(<span class="hljs-params"></span>) {
   <span class="hljs-keyword">return</span> gulp
-    .src(<span class="hljs-string">'./dist/*.css'</span>)
-    .pipe(cssPrefix(<span class="hljs-string">'spectre-'</span>))
-    .pipe(gulp.dest(<span class="hljs-string">'./dist'</span>));
+    .<span class="hljs-title function_">src</span>(<span class="hljs-string">'./dist/*.css'</span>)
+    .<span class="hljs-title function_">pipe</span>(<span class="hljs-title function_">cssPrefix</span>(<span class="hljs-string">'spectre-'</span>))
+    .<span class="hljs-title function_">pipe</span>(gulp.<span class="hljs-title function_">dest</span>(<span class="hljs-string">'./dist'</span>));
 }
 
-exports.prefix = prefix;
+<span class="hljs-built_in">exports</span>.<span class="hljs-property">prefix</span> = prefix;
 </code></pre>
             <p>After you compile your version of Spectre in the /dist, run <code>gulp prefix</code> in the directory of Spectre.</p>
           </div>
