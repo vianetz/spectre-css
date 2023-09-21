@@ -15,6 +15,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0 # need to checkout all branches for git-diff-action to work
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
@@ -26,8 +28,18 @@ jobs:
         npm install
         gulp
 
+    - name: Test
+      run: |
+        npm test
+
+    - name: Verify build against repo content
+      uses: GrantBirki/git-diff-action@v2.1.1
+      with:
+        json_diff_file_output: diff.json
+        search_path: dist/
+
     - name: Archive production artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: dist
         path: dist
