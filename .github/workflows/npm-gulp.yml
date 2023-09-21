@@ -16,7 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        fetch-depth: 0 # need to checkout all branches for git-diff-action to work
+        fetch-depth: 2 # need to checkout more for git diff to work
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
@@ -30,7 +30,7 @@ jobs:
 
     - name: Verify build against repo content
       run: |
-        git diff --exit-code
+        git diff --exit-code --compact-summary || (echo "::error::generated assets differ, maybe forgot to run gulp?"; exit 1)
 
     - name: Test
       run: |
