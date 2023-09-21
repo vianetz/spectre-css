@@ -28,15 +28,13 @@ jobs:
         npm install
         gulp
 
+    - name: Verify build against repo content
+      run: |
+        git diff --exit-code
+
     - name: Test
       run: |
         npm test
-
-    - name: Verify build against repo content
-      uses: GrantBirki/git-diff-action@v2.1.1
-      with:
-        json_diff_file_output: diff.json
-        search_path: dist/
 
     - name: Archive production artifacts
       uses: actions/upload-artifact@v3
