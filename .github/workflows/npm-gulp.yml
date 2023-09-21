@@ -23,9 +23,14 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
+    - uses: pnpm/action-setup@v2
+      name: Install pnpm
+      with:
+        version: latest
+        run_install: true
+
     - name: Build
       run: |
-        npm install
         gulp
 
     - name: Verify build against repo content
@@ -34,7 +39,7 @@ jobs:
 
     - name: Test
       run: |
-        npm test
+        pnpm test
 
     - name: Archive production artifacts
       uses: actions/upload-artifact@v3
