@@ -47,12 +47,11 @@ jobs:
 
     - name: Build
       run: |
-        gulp build
-        gulp docs
+        gulp
 
     - name: Verify build against repo content
       run: |
-        git diff --exit-code --compact-summary || (echo "::error::generated assets differ, maybe forgot to run gulp?"; exit 1)
+        git diff --exit-code --compact-summary || (echo "::notice::generated assets differ, maybe forgot to run gulp?"; exit 1)
 
     - name: Test
       run: |
