@@ -23,6 +23,7 @@
   "bugs": {
     "url": "https://github.com/vianetz/spectre-css/issues"
   },
+  "contributors": ["Christoph Massmann <cm@vianetz.com> (https://vianetz.com/)"],
   "devDependencies": {
     "bundlesize": "^0.18.1",
     "gulp": "^4.0.2",
