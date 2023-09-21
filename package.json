@@ -35,7 +35,9 @@
     "jstransformer-highlight": "github:vast/jstransformer-highlight",
     "jstransformer-markdown-it": "^3.0.0",
     "sass": "^1.68.0",
-    "sass-migrator": "^1.7.3"
+    "sass-migrator": "^1.7.3",
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard-scss": "^11.0.0"
   },
   "browserslist": [
     "last 4 Chrome versions",
@@ -46,7 +48,7 @@
     "Explorer >= 10"
   ],
   "scripts": {
-    "test": "bundlesize"
+    "test": "bundlesize && stylelint **/*.scss"
   },
   "bundlesize": [
     {
