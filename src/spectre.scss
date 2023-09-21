@@ -2,7 +2,8 @@
 @use "variables";
 @use "mixins";
 
-/*! Spectre.css v#{variables.$version} | MIT License | github.com/picturepan2/spectre */
+/*! Spectre.css v#{variables.$version} | MIT License | #{variables.$url} */
+
 // Reset and dependencies
 @use "normalize";
 @use "base";

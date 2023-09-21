@@ -1,8 +1,8 @@
-<a href="https://picturepan2.github.io/spectre">
-  <img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg" width="72" height="72">
+<a href="https://vianetz.github.io/spectre-css">
+  <img src="https://vianetz.github.io/spectre-css/img/spectre-logo.svg" width="72" height="72" alt="spectre.css">
 </a>
 
-## Spectre.css
+## Spectre.css (fork)
 
 [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
 
@@ -14,93 +14,95 @@ Spectre.css is a lightweight, responsive and modern CSS framework.
 
 Spectre is a side project based on years of CSS development work on a large web service project. Spectre only includes modern base styles, responsive layout system, CSS components and utilities, and it can be modified for your project with Sass/Scss compiler.
 
-Spectre.css is completely free to use. If you enjoy it, please consider [donating via Paypal](https://www.paypal.me/picturepan2) or [via Patreon](https://www.patreon.com/spectrecss) for the further development. ♥ 
+## Purpose of this fork
 
+As the original author unfortunately is [no longer responsive](https://github.com/picturepan2/spectre/issues/684) I started this fork of Spectre.css to continue development and update with latest browser versions.
+
+My **main goal** for this fork is to keep the spirit of the excellent original work by the author, which means
+- keep it extremely lightweight and simple
+- stay up-to-date with latest browser developments
+
+Of course I'm happy to accept pull requests for bugfix or feature proposals.
 
 ## Getting started
 
-There are 5 ways to get started with Spectre CSS framework in your projects. You can either manually install or use NPM, Yarn and Bower.
+There are 4 ways to get started with Spectre CSS framework in your projects. You can either manually install or use NPM, Yarn and Bower.
 
 ### Install manually
-Download the compiled and minified [Spectre CSS files](https://github.com/picturepan2/spectre/tree/master/docs/dist). And include `spectre.css` located in `/docs/dist` in your website or Web app &lt;head&gt; part.
+Download the compiled and minified [Spectre CSS files](https://github.com/vianetz/spectre-css/releases) and include `spectre.min.css` in your website or web app `<head>` part:
 
 `<link rel="stylesheet" href="spectre.min.css">`
 
-### Install from CDN
-Alternatively, you can use the [unpkg](https://unpkg.com/) or [cdnjs](https://cdnjs.com/libraries/spectre.css) CDN to load compiled Spectre.css.
-
-`<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">`
-
 ### Install with NPM
-`$ npm install spectre.css --save`
+`$ npm install --save https://github.com/vianetz/spectre-css`
 
 ### Install with Yarn
-`$ yarn add spectre.css`
+`$ yarn add npm install --save https://github.com/vianetz/spectre-css`
 
 ### Install with Bower
-`$ bower install spectre.css --save`
+`$ bower install npm install --save https://github.com/vianetz/spectre-css --save`
 
 ## Compiling custom version
 
-You can compile your custom version of Spectre.css. Read [the documentation](https://picturepan2.github.io/spectre/getting-started/custom.html).
+You can compile your custom version of Spectre.css. Read [the documentation](https://vianetz.github.io/spectre-css/getting-started/custom.html).
 
 ## Documentation and examples
 
 ### Elements
 
-- [Typography](https://picturepan2.github.io/spectre/elements/typography.html)
-- [Tables](https://picturepan2.github.io/spectre/elements/tables.html)
-- [Buttons](https://picturepan2.github.io/spectre/elements/buttons.html)
-- [Forms](https://picturepan2.github.io/spectre/elements/forms.html)
-- [Icons.css](https://picturepan2.github.io/icons.css) - CSS ONLY
-- [Labels](https://picturepan2.github.io/spectre/elements/labels.html)
-- [Code](https://picturepan2.github.io/spectre/elements/code.html)
-- [Media](https://picturepan2.github.io/spectre/elements/media.html)
+- [Typography](https://vianetz.github.io/spectre-css/elements/typography.html)
+- [Tables](https://vianetz.github.io/spectre-css/elements/tables.html)
+- [Buttons](https://vianetz.github.io/spectre-css/elements/buttons.html)
+- [Forms](https://vianetz.github.io/spectre-css/elements/forms.html)
+- [Icons.css](https://vianetz.github.io/icons.css) - CSS ONLY
+- [Labels](https://vianetz.github.io/spectre-css/elements/labels.html)
+- [Code](https://vianetz.github.io/spectre-css/elements/code.html)
+- [Media](https://vianetz.github.io/spectre-css/elements/media.html)
 
 ### Layout
-- [Flexbox grid](https://picturepan2.github.io/spectre/layout/grid.html) 
-- [Responsive](https://picturepan2.github.io/spectre/layout/responsive.html)
-- [Hero](https://picturepan2.github.io/spectre/layout/hero.html)
-- [Navbar](https://picturepan2.github.io/spectre/layout/navbar.html)
+- [Flexbox grid](https://vianetz.github.io/spectre-css/layout/grid.html) 
+- [Responsive](https://vianetz.github.io/spectre-css/layout/responsive.html)
+- [Hero](https://vianetz.github.io/spectre-css/layout/hero.html)
+- [Navbar](https://vianetz.github.io/spectre-css/layout/navbar.html)
 
 ### Components
-- [Accordions](https://picturepan2.github.io/spectre/components/accordions.html)
-- [Avatars](https://picturepan2.github.io/spectre/components/avatars.html)
-- [Badges](https://picturepan2.github.io/spectre/components/badges.html)
-- [Breadcrumbs](https://picturepan2.github.io/spectre/components/breadcrumbs.html)
-- [Bars](https://picturepan2.github.io/spectre/components/bars.html)
-- [Cards](https://picturepan2.github.io/spectre/components/cards.html)
-- [Chips](https://picturepan2.github.io/spectre/components/chips.html)
-- [Empty states](https://picturepan2.github.io/spectre/components/empty.html)
-- [Menu](https://picturepan2.github.io/spectre/components/menu.html)
-- [Nav](https://picturepan2.github.io/spectre/components/nav.html)
-- [Modals](https://picturepan2.github.io/spectre/components/modals.html)
-- [Pagination](https://picturepan2.github.io/spectre/components/pagination.html)
-- [Panels](https://picturepan2.github.io/spectre/components/panels.html)
-- [Popovers](https://picturepan2.github.io/spectre/components/popovers.html)
-- [Steps](https://picturepan2.github.io/spectre/components/steps.html)
-- [Tabs](https://picturepan2.github.io/spectre/components/tabs.html)
-- [Tiles](https://picturepan2.github.io/spectre/components/tiles.html)
-- [Toasts](https://picturepan2.github.io/spectre/components/toasts.html)
-- [Tooltips](https://picturepan2.github.io/spectre/components/tooltips.html)
+- [Accordions](https://vianetz.github.io/spectre-css/components/accordions.html)
+- [Avatars](https://vianetz.github.io/spectre-css/components/avatars.html)
+- [Badges](https://vianetz.github.io/spectre-css/components/badges.html)
+- [Breadcrumbs](https://vianetz.github.io/spectre-css/components/breadcrumbs.html)
+- [Bars](https://vianetz.github.io/spectre-css/components/bars.html)
+- [Cards](https://vianetz.github.io/spectre-css/components/cards.html)
+- [Chips](https://vianetz.github.io/spectre-css/components/chips.html)
+- [Empty states](https://vianetz.github.io/spectre-css/components/empty.html)
+- [Menu](https://vianetz.github.io/spectre-css/components/menu.html)
+- [Nav](https://vianetz.github.io/spectre-css/components/nav.html)
+- [Modals](https://vianetz.github.io/spectre-css/components/modals.html)
+- [Pagination](https://vianetz.github.io/spectre-css/components/pagination.html)
+- [Panels](https://vianetz.github.io/spectre-css/components/panels.html)
+- [Popovers](https://vianetz.github.io/spectre-css/components/popovers.html)
+- [Steps](https://vianetz.github.io/spectre-css/components/steps.html)
+- [Tabs](https://vianetz.github.io/spectre-css/components/tabs.html)
+- [Tiles](https://vianetz.github.io/spectre-css/components/tiles.html)
+- [Toasts](https://vianetz.github.io/spectre-css/components/toasts.html)
+- [Tooltips](https://vianetz.github.io/spectre-css/components/tooltips.html)
 
 ### Utilities
 
-- [Utilities](https://picturepan2.github.io/spectre/utilities.html) - colors, display, divider, loading, position, shapes and text utilities
+- [Utilities](https://vianetz.github.io/spectre-css/utilities.html) - colors, display, divider, loading, position, shapes and text utilities
 
 ### Experimentals
-- [360-Degree Viewer](https://picturepan2.github.io/spectre/experimentals/viewer-360.html) - CSS ONLY
-- [Autocomplete](https://picturepan2.github.io/spectre/experimentals/autocomplete.html)
-- [Calendars](https://picturepan2.github.io/spectre/experimentals/calendars.html)
-- [Carousels](https://picturepan2.github.io/spectre/experimentals/carousels.html) - CSS ONLY
-- [Comparison Sliders](https://picturepan2.github.io/spectre/experimentals/comparison.html) - CSS ONLY
-- [Filters](https://picturepan2.github.io/spectre/experimentals/filters.html) - CSS ONLY
-- [Meters](https://picturepan2.github.io/spectre/experimentals/meters.html)
-- [Off-canvas](https://picturepan2.github.io/spectre/experimentals/off-canvas.html) - CSS ONLY
-- [Parallax](https://picturepan2.github.io/spectre/experimentals/parallax.html) - CSS ONLY
-- [Progress](https://picturepan2.github.io/spectre/experimentals/progress.html)
-- [Sliders](https://picturepan2.github.io/spectre/experimentals/sliders.html)
-- [Timelines](https://picturepan2.github.io/spectre/experimentals/timelines.html)
+- [360-Degree Viewer](https://vianetz.github.io/spectre-css/experimentals/viewer-360.html) - CSS ONLY
+- [Autocomplete](https://vianetz.github.io/spectre-css/experimentals/autocomplete.html)
+- [Calendars](https://vianetz.github.io/spectre-css/experimentals/calendars.html)
+- [Carousels](https://vianetz.github.io/spectre-css/experimentals/carousels.html) - CSS ONLY
+- [Comparison Sliders](https://vianetz.github.io/spectre-css/experimentals/comparison.html) - CSS ONLY
+- [Filters](https://vianetz.github.io/spectre-css/experimentals/filters.html) - CSS ONLY
+- [Meters](https://vianetz.github.io/spectre-css/experimentals/meters.html)
+- [Off-canvas](https://vianetz.github.io/spectre-css/experimentals/off-canvas.html) - CSS ONLY
+- [Parallax](https://vianetz.github.io/spectre-css/experimentals/parallax.html) - CSS ONLY
+- [Progress](https://vianetz.github.io/spectre-css/experimentals/progress.html)
+- [Sliders](https://vianetz.github.io/spectre-css/experimentals/sliders.html)
+- [Timelines](https://vianetz.github.io/spectre-css/experimentals/timelines.html)
 
 ## Browser support
 Spectre uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most styles compatible with earlier browsers and [Normalize.css](https://necolas.github.io/normalize.css/) for CSS resets. Spectre is designed for modern browsers. For best compatibility, these browsers are recommended:

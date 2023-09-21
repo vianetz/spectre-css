@@ -23,6 +23,7 @@
   "bugs": {
     "url": "https://github.com/vianetz/spectre-css/issues"
   },
+  "contributors": ["Christoph Massmann <cm@vianetz.com> (https://vianetz.com/)"],
   "devDependencies": {
     "bundlesize": "^0.18.1",
     "gulp": "^4.0.2",
@@ -35,7 +36,9 @@
     "jstransformer-highlight": "github:vast/jstransformer-highlight",
     "jstransformer-markdown-it": "^3.0.0",
     "sass": "^1.68.0",
-    "sass-migrator": "^1.7.3"
+    "sass-migrator": "^1.7.3",
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard-scss": "^11.0.0"
   },
   "browserslist": [
     "last 4 Chrome versions",
@@ -46,7 +49,7 @@
     "Explorer >= 10"
   ],
   "scripts": {
-    "test": "bundlesize"
+    "test": "bundlesize && stylelint **/*.scss"
   },
   "bundlesize": [
     {

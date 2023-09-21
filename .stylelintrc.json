@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss"
+  ],
+  "defaultSeverity": "warning",
+  "rules": {
+    "block-no-empty": true,
+    "at-rule-empty-line-before": null,
+    "color-named": "never",
+    "scss/operator-no-unspaced": null,
+    "selector-pseudo-element-colon-notation": "double",
+    "selector-class-pattern": "[\\-\\_a-z0-9]"
+  }
+}
