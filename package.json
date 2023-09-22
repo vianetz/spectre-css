@@ -59,7 +59,7 @@
     "test": "npm run test:size && npm run test:style && npm run test:visual",
     "test:size": "bundlesize",
     "test:style": "stylelint **/*.scss",
-    "test:visual": "osnap --no-create --no-skip --no-only",
+    "test:visual": "osnap download-chromium && osnap --no-create --no-skip --no-only",
     "ci": "start-server-and-test start-server http://127.0.0.1:8080 test"
   },
   "bundlesize": [
