@@ -1,0 +1,70 @@
+[
+  {
+    "name": "360-Degree Viewer",
+    "url": "/experimentals/viewer-360.html"
+  },
+  {
+    "name": "Autocomplete",
+    "url": "/experimentals/autocomplete.html",
+    "ignore": [
+      {
+        "selectorAll": ".loading"
+      }
+    ]
+  },
+  {
+    "name": "Calendars",
+    "url": "/experimentals/calendars.html"
+  },
+  {
+    "name": "Carousels",
+    "url": "/experimentals/carousels.html",
+    "ignore": [
+      {
+        "selectorAll": "img"
+      }
+    ]
+  },
+  {
+    "name": "Comparison sliders",
+    "url": "/experimentals/comparison.html",
+    "ignore": [
+      {
+        "selectorAll": ".comparison-resizer"
+      }
+    ]
+  },
+  {
+    "name": "Filters",
+    "url": "/experimentals/filters.html"
+  },
+  {
+    "name": "Meters",
+    "url": "/experimentals/meters.html"
+  },
+  {
+    "name": "Off-canvas",
+    "url": "/experimentals/off-canvas.html"
+  },
+  {
+    "name": "Parallax",
+    "url": "/experimentals/parallax.html"
+  },
+  {
+    "name": "Progress",
+    "url": "/experimentals/progress.html",
+    "ignore": [
+      {
+        "selectorAll": ".progress:indeterminate"
+      }
+    ]
+  },
+  {
+    "name": "Sliders",
+    "url": "/experimentals/sliders.html"
+  },
+  {
+    "name": "Timelines",
+    "url": "/experimentals/timelines.html"
+  }
+]

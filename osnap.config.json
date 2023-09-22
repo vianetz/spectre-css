@@ -1,0 +1,7 @@
+{
+  "baseUrl": "https://vianetz.github.io/spectre-css/",
+  "fullScreen": true,
+  "defaultSizes": [
+    { "name": "xxl", "width": 1600, "height": 900 }
+  ]
+}

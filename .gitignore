@@ -3,6 +3,8 @@ node_modules/
 yarn.lock
 package-lock.json
 .*
+__snapshots__/__diff__/
+__snapshots__/__updated__/
 !.csscomb.json
 !.gitignore
 !.gitattributes

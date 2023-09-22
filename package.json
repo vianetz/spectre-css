@@ -23,8 +23,11 @@
   "bugs": {
     "url": "https://github.com/vianetz/spectre-css/issues"
   },
-  "contributors": ["Christoph Massmann <cm@vianetz.com> (https://vianetz.com/)"],
+  "contributors": [
+    "Christoph Massmann <cm@vianetz.com> (https://vianetz.com/)"
+  ],
   "devDependencies": {
+    "@space-labs/osnap": "^1.5.3",
     "bundlesize": "^0.18.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
@@ -49,7 +52,7 @@
     "Explorer >= 10"
   ],
   "scripts": {
-    "test": "bundlesize && stylelint **/*.scss"
+    "test": "bundlesize && stylelint **/*.scss && osnap"
   },
   "bundlesize": [
     {
