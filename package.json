@@ -1,9 +1,9 @@
 {
   "name": "spectre.css",
-  "version": "0.5.9",
+  "version": "1.0.0",
+  "description": "Spectre.css: A lightweight, responsive and modern CSS framework",
   "homepage": "https://vianetz.github.io/spectre-css",
   "author": "Yan Zhu <picturepan2@hotmail.com>",
-  "description": "Spectre.css: A lightweight, responsive and modern CSS framework",
   "main": "dist/spectre.css",
   "repository": {
     "type": "git",
