@@ -7,7 +7,11 @@
     "block-no-empty": true,
     "at-rule-empty-line-before": null,
     "color-named": "never",
+    "declaration-empty-line-before": null,
+    "no-descending-specificity": null,
+    "number-max-precision": 8,
     "scss/operator-no-unspaced": null,
+    "scss/dollar-variable-empty-line-before": null,
     "selector-pseudo-element-colon-notation": "double",
     "selector-class-pattern": "[\\-\\_a-z0-9]"
   }
