@@ -23,21 +23,25 @@
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+
   &:focus {
     @include shadow.control-shadow();
   }
+
   &:focus,
   &:hover {
     background: variables.$secondary-color;
     border-color: variables.$primary-color-dark;
     text-decoration: none;
   }
+
   &:active,
   &.active {
     background: variables.$primary-color-dark;
     border-color: color.adjust(variables.$primary-color-dark, $lightness: -5%);
     color: variables.$light-color;
     text-decoration: none;
+
     &.loading {
       &::after {
         border-bottom-color: variables.$light-color;
@@ -45,6 +49,7 @@
       }
     }
   }
+
   &[disabled],
   &:disabled,
   &.disabled {
@@ -58,18 +63,21 @@
     background: variables.$primary-color;
     border-color: variables.$primary-color-dark;
     color: variables.$light-color;
+
     &:focus,
     &:hover {
       background: color.adjust(variables.$primary-color-dark, $lightness: -2%);
       border-color: color.adjust(variables.$primary-color-dark, $lightness: -5%);
       color: variables.$light-color;
     }
+
     &:active,
     &.active {
       background: color.adjust(variables.$primary-color-dark, $lightness: -4%);
       border-color: color.adjust(variables.$primary-color-dark, $lightness: -7%);
       color: variables.$light-color;
     }
+
     &.loading {
       &::after {
         border-bottom-color: variables.$light-color;
@@ -92,6 +100,7 @@
     background: transparent;
     border-color: transparent;
     color: variables.$link-color;
+
     &:focus,
     &:hover,
     &:active,
@@ -167,19 +176,23 @@
 
   .btn {
     flex: 1 0 auto;
+
     &:first-child:not(:last-child) {
       border-bottom-right-radius: 0;
       border-top-right-radius: 0;
     }
+
     &:not(:first-child):not(:last-child) {
       border-radius: 0;
       margin-left: -(variables.$border-width);
     }
+
     &:last-child:not(:first-child) {
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
       margin-left: -(variables.$border-width);
     }
+
     &:focus,
     &:hover,
     &:active,

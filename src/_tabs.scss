@@ -19,11 +19,13 @@
       margin: 0 variables.$unit-2 0 0;
       padding: variables.$unit-2 variables.$unit-1 variables.$unit-2 - variables.$border-width-lg variables.$unit-1;
       text-decoration: none;
+
       &:focus,
       &:hover {
         color: variables.$link-color;
       }
     }
+
     &.active a,
     a.active {
       border-bottom-color: variables.$primary-color;

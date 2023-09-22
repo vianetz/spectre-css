@@ -27,6 +27,7 @@ $carousel-number: 8;
     height: 100%;
     left: 0;
     position: relative;
+
     &::before {
       content: "";
       display: block;
@@ -63,9 +64,11 @@ $carousel-number: 8;
       transform: translateY(-50%);
       z-index: variables.$zindex-1;
     }
+
     .item-prev {
       left: 1rem;
     }
+
     .item-next {
       right: 1rem;
     }
@@ -121,6 +124,7 @@ $carousel-number: 8;
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(0);
   }
@@ -131,6 +135,7 @@ $carousel-number: 8;
     opacity: 1;
     transform: translateX(0);
   }
+
   100% {
     opacity: 1;
     transform: translateX(-50%);

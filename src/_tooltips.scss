@@ -3,6 +3,7 @@
 // Tooltips
 .tooltip {
   position: relative;
+
   &::after {
     background: rgba(variables.$dark-color, .95);
     border-radius: variables.$border-radius;
@@ -24,6 +25,7 @@
     white-space: pre;
     z-index: variables.$zindex-3;
   }
+
   &:focus,
   &:hover {
     &::after {
@@ -31,6 +33,7 @@
       transform: translate(-50%, -(variables.$unit-1));
     }
   }
+
   &[disabled],
   &.disabled {
     pointer-events: auto;
@@ -42,6 +45,7 @@
       left: 100%;
       transform: translate(-(variables.$unit-1), 50%);
     }
+
     &:focus,
     &:hover {
       &::after {
@@ -56,6 +60,7 @@
       top: 100%;
       transform: translate(-50%, -(variables.$unit-2));
     }
+
     &:focus,
     &:hover {
       &::after {
@@ -71,6 +76,7 @@
       right: 100%;
       transform: translate(variables.$unit-2, 50%);
     }
+
     &:focus,
     &:hover {
       &::after {

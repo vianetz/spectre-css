@@ -18,6 +18,7 @@
       transform: translate(-.05rem, -.5rem);
     }
   }
+
   &[data-badge] {
     &::after {
       font-size: variables.$font-size-sm;
@@ -29,6 +30,7 @@
       white-space: nowrap;
     }
   }
+
   &:not([data-badge]),
   &[data-badge=""] {
     &::after {

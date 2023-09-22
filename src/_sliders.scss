@@ -23,7 +23,7 @@
 
   // Slider Thumb
   &::-webkit-slider-thumb {
-    -webkit-appearance: none;
+    appearance: none;
     background: variables.$primary-color;
     border: 0;
     border-radius: 50%;
@@ -32,6 +32,7 @@
     transition: transform .2s;
     width: variables.$unit-3;
   }
+
   &::-moz-range-thumb {
     background: variables.$primary-color;
     border: 0;
@@ -40,6 +41,7 @@
     transition: transform .2s;
     width: variables.$unit-3;
   }
+
   &::-ms-thumb {
     background: variables.$primary-color;
     border: 0;
@@ -53,9 +55,11 @@
     &::-webkit-slider-thumb {
       transform: scale(1.25);
     }
+
     &::-moz-range-thumb {
       transform: scale(1.25);
     }
+
     &::-ms-thumb {
       transform: scale(1.25);
     }
@@ -67,10 +71,12 @@
       background: variables.$gray-color-light;
       transform: scale(1);
     }
+
     &::-moz-range-thumb {
       background: variables.$gray-color-light;
       transform: scale(1);
     }
+
     &::-ms-thumb {
       background: variables.$gray-color-light;
       transform: scale(1);
@@ -84,18 +90,21 @@
     height: variables.$unit-h;
     width: 100%;
   }
+
   &::-moz-range-track {
     background: variables.$bg-color-dark;
     border-radius: variables.$border-radius;
     height: variables.$unit-h;
     width: 100%;
   }
+
   &::-ms-track {
     background: variables.$bg-color-dark;
     border-radius: variables.$border-radius;
     height: variables.$unit-h;
     width: 100%;
   }
+
   &::-ms-fill-lower {
     background: variables.$primary-color;
   }

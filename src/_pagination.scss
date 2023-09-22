@@ -20,6 +20,7 @@
       display: inline-block;
       padding: variables.$unit-1 variables.$unit-2;
       text-decoration: none;
+
       &:focus,
       &:hover {
         color: variables.$primary-color;

@@ -7,7 +7,7 @@ $parallax-offset: 4.5px !default;
 $parallax-offset-z: 50px !default;
 $parallax-perspective: 1000px !default;
 $parallax-scale: .95 !default;
-$parallax-fade-color: rgba(255, 255, 255, .35) !default;
+$parallax-fade-color: rgb(255 255 255 / 35%) !default;
 
 // Mixin: Parallax direction
 @mixin parallax-dir() {
