@@ -19,7 +19,7 @@ Spectre is a side project based on years of CSS development work on a large web 
 As the original author unfortunately is [no longer responsive](https://github.com/picturepan2/spectre/issues/684) I started this fork of Spectre.css to continue development and update with latest browser versions.
 
 My **main goal** for this fork is to keep the spirit of the excellent original work by the author, which means
-- keep it extremely lightweight and simple
+- keep it extremely lightweight, simple and minimal
 - stay up-to-date with latest browser developments
 
 Of course I'm happy to accept pull requests for bugfix or feature proposals.
