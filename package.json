@@ -23,8 +23,11 @@
   "bugs": {
     "url": "https://github.com/vianetz/spectre-css/issues"
   },
-  "contributors": ["Christoph Massmann <cm@vianetz.com> (https://vianetz.com/)"],
+  "contributors": [
+    "Christoph Massmann <cm@vianetz.com> (https://vianetz.com/)"
+  ],
   "devDependencies": {
+    "@space-labs/osnap": "^1.5.3",
     "bundlesize": "^0.18.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
@@ -33,10 +36,12 @@
     "gulp-pug": "^5.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
+    "http-server": "^14.1.1",
     "jstransformer-highlight": "github:vast/jstransformer-highlight",
     "jstransformer-markdown-it": "^3.0.0",
     "sass": "^1.68.0",
     "sass-migrator": "^1.7.3",
+    "start-server-and-test": "^2.0.1",
     "stylelint": "^15.10.3",
     "stylelint-config-standard-scss": "^11.0.0"
   },
@@ -49,7 +54,13 @@
     "Explorer >= 10"
   ],
   "scripts": {
-    "test": "bundlesize && stylelint **/*.scss"
+    "start-server": "http-server -a 127.0.0.1 -p 8080 ./docs",
+    "build": "gulp",
+    "test": "npm run test:size && npm run test:style && npm run test:visual",
+    "test:size": "bundlesize",
+    "test:style": "stylelint **/*.scss",
+    "test:visual": "osnap --no-create --no-skip --no-only",
+    "ci": "start-server-and-test start-server http://127.0.0.1:8080 test"
   },
   "bundlesize": [
     {

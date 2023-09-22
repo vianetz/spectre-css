@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Colors",
+    "url": "/utilities/colors.html"
+  },
+  {
+    "name": "Cursors",
+    "url": "/utilities/cursors.html"
+  },
+  {
+    "name": "Display",
+    "url": "/utilities/display.html"
+  },
+  {
+    "name": "Divider",
+    "url": "/utilities/divider.html"
+  },
+  {
+    "name": "Loading",
+    "url": "/utilities/loading.html",
+    "ignore": [
+      {
+        "selectorAll": ".loading"
+      }
+    ]
+  },
+  {
+    "name": "Position",
+    "url": "/utilities/position.html"
+  },
+  {
+    "name": "Shapes",
+    "url": "/utilities/shapes.html"
+  },
+  {
+    "name": "Text",
+    "url": "/utilities/text.html"
+  }
+]

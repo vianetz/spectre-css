@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Typography",
+    "url": "/elements/typography.html"
+  },
+  {
+    "name": "Tables",
+    "url": "/elements/tables.html"
+  },
+  {
+    "name": "Buttons",
+    "url": "/elements/buttons.html",
+    "ignore": [
+      {
+        "selectorAll": ".loading"
+      }
+    ]
+  },
+  {
+    "name": "Forms",
+    "url": "/elements/forms.html",
+    "ignore": [
+      {
+        "selectorAll": ".loading"
+      }
+    ]
+  },
+  {
+    "name": "Icons",
+    "url": "/elements/icons.html"
+  },
+  {
+    "name": "Labels",
+    "url": "/elements/labels.html"
+  },
+  {
+    "name": "Code",
+    "url": "/elements/code.html"
+  },
+  {
+    "name": "Media",
+    "url": "/elements/media.html",
+    "ignore": [
+      {
+        "selectorAll": ".video-responsive"
+      }
+    ]
+  }
+]

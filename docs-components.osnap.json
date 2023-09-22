@@ -1,0 +1,78 @@
+[
+  {
+    "name": "Accordions",
+    "url": "/components/accordions.html"
+  },
+  {
+    "name": "Avatars",
+    "url": "/components/avatars.html"
+  },
+  {
+    "name": "Badges",
+    "url": "/components/badges.html"
+  },
+  {
+    "name": "Bars",
+    "url": "/components/bars.html"
+  },
+  {
+    "name": "Breadcrumbs",
+    "url": "/components/breadcrumbs.html"
+  },
+  {
+    "name": "Cards",
+    "url": "/components/cards.html"
+  },
+  {
+    "name": "Chips",
+    "url": "/components/chips.html"
+  },
+  {
+    "name": "Empty states",
+    "url": "/components/empty.html"
+  },
+  {
+    "name": "Menu",
+    "url": "/components/menu.html"
+  },
+  {
+    "name": "Modals",
+    "url": "/components/modals.html"
+  },
+  {
+    "name": "Nav",
+    "url": "/components/nav.html"
+  },
+  {
+    "name": "Pagination",
+    "url": "/components/pagination.html"
+  },
+  {
+    "name": "Panels",
+    "url": "/components/panels.html"
+  },
+  {
+    "name": "Popovers",
+    "url": "/components/popovers.html"
+  },
+  {
+    "name": "Steps",
+    "url": "/components/steps.html"
+  },
+  {
+    "name": "Tabs",
+    "url": "/components/tabs.html"
+  },
+  {
+    "name": "Tiles",
+    "url": "/components/tiles.html"
+  },
+  {
+    "name": "Toasts",
+    "url": "/components/toasts.html"
+  },
+  {
+    "name": "Tooltips",
+    "url": "/components/tooltips.html"
+  }
+]
