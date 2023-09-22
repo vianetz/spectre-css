@@ -42,6 +42,14 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-pnpm-store-
 
+    - uses: actions/cache@v3
+      name: Setup osnap chromium cache
+      with:
+        path: ~/osnap_chromium_*
+        key: ${{ runner.os }}-osnap-chromium
+        restore-keys: |
+          ${{ runner.os }}-osnap-chromium
+
     - name: Install dependencies
       run: pnpm install
 
