@@ -4,8 +4,6 @@
 
 ## Spectre.css (fork)
 
-[![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
-
 Spectre.css is a lightweight, responsive and modern CSS framework.
 
 - Lightweight (~10KB gzipped) starting point for your projects
@@ -34,13 +32,13 @@ Download the compiled and minified [Spectre CSS files](https://github.com/vianet
 `<link rel="stylesheet" href="spectre.min.css">`
 
 ### Install with NPM
-`$ npm install --save https://github.com/vianetz/spectre-css`
+`$ npm install --save @vianetz/spectre.css`
 
 ### Install with Yarn
-`$ yarn add npm install --save https://github.com/vianetz/spectre-css`
+`$ yarn add npm install --save @vianetz/spectre.css`
 
 ### Install with Bower
-`$ bower install npm install --save https://github.com/vianetz/spectre-css --save`
+`$ bower install npm install --save @vianetz/spectre.css --save`
 
 ## Compiling custom version
 
