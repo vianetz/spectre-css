@@ -7,10 +7,12 @@ const rename = require('gulp-rename');
 const pug = require('gulp-pug');
 const autoprefixer = require('gulp-autoprefixer');
 
+const sassOptions = {outputStyle: 'expanded', precision: 10, includePaths: ['node_modules/']};
+
 function build() {
   return gulp
     .src('./src/*.scss')
-    .pipe(sass({outputStyle: 'expanded', precision: 10})
+    .pipe(sass(sassOptions)
       .on('error', sass.logError)
     )
     .pipe(autoprefixer())
@@ -26,7 +28,7 @@ function build() {
 function docs_css() {
   return gulp
     .src(['./src/*.scss', './docs/src/scss/*.scss'])
-    .pipe(sass({outputStyle: 'expanded', precision: 10})
+    .pipe(sass(sassOptions)
       .on('error', sass.logError)
     )
     .pipe(autoprefixer())

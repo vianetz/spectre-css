@@ -4,7 +4,7 @@
 
 /*! Spectre.css v#{variables.$version} | MIT License | #{variables.$url} */
 // Reset and dependencies
-@use "normalize";
+@use "normalize.css/normalize.css";
 @use "base";
 
 // Elements
