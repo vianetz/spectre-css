@@ -795,7 +795,9 @@ html:lang(ko),
 }
 
 fieldset {
-  margin-bottom: .8rem;
+  border: 0;
+  margin: 0 0 .8rem 0;
+  padding: 0;
 }
 
 legend {
