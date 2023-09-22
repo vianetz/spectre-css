@@ -39,6 +39,11 @@
   },
   {
     "name": "Media",
-    "url": "/elements/media.html"
+    "url": "/elements/media.html",
+    "ignore": [
+      {
+        "selectorAll": "#player"
+      }
+    ]
   }
 ]
