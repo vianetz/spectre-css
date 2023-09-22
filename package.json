@@ -54,7 +54,7 @@
     "Explorer >= 10"
   ],
   "scripts": {
-    "start-server": "http-server -a 127.0.0.1 -p 8080 --silent ./docs",
+    "start-server": "http-server -a 127.0.0.1 -p 8080 ./docs",
     "build": "gulp",
     "test": "npm run test:size && npm run test:style && npm run test:visual",
     "test:size": "bundlesize",
