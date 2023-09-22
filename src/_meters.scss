@@ -3,7 +3,7 @@
 // Meters
 // Credit: https://css-tricks.com/html5-meter-element/
 .meter {
-  appearance: none;
+  appearance: meter;
   background: variables.$bg-color;
   border: 0;
   border-radius: variables.$border-radius;
