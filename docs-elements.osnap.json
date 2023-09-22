@@ -42,7 +42,7 @@
     "url": "/elements/media.html",
     "ignore": [
       {
-        "selectorAll": "#player"
+        "selectorAll": ".video-responsive"
       }
     ]
   }

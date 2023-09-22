@@ -57,6 +57,14 @@ jobs:
       run: |
         pnpm run ci
 
+    - uses: actions/upload-artifact@v3
+      if: failure()
+      with:
+        name: failed-snapshots
+        path: |
+          __snapshots__/__diff__
+          __snapshots__/__updated__
+
     - name: Archive production artifacts
       uses: actions/upload-artifact@v3
       with:
