@@ -1,4 +1,4 @@
-name: Build CSS
+name: Framework CI
 
 on:
   push:
@@ -9,19 +9,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [18.x]
-
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
       with:
-        fetch-depth: 2 # need to checkout more for git diff to work
-
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
+        fetch-depth: 2 # need to checkout more for git diff later to work
 
     - uses: pnpm/action-setup@v2
       name: Install pnpm
@@ -29,18 +20,11 @@ jobs:
         version: latest
         run_install: false
 
-    - name: Get pnpm store directory
-      shell: bash
-      run: |
-        echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
-
-    - uses: actions/cache@v3
-      name: Setup pnpm cache
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
       with:
-        path: ${{ env.STORE_PATH }}
-        key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-        restore-keys: |
-          ${{ runner.os }}-pnpm-store-
+        node-version: '18.x'
+        cache: pnpm
 
     - uses: actions/cache@v3
       name: Setup osnap chromium cache
@@ -70,8 +54,8 @@ jobs:
       with:
         name: failed-snapshots
         path: |
-          __snapshots__/__diff__
-          __snapshots__/__updated__
+          tests/snapshots/__diff__
+          tests/snapshots/__updated__
 
     - name: Archive production artifacts
       uses: actions/upload-artifact@v3
