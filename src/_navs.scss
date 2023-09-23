@@ -13,15 +13,18 @@
       color: variables.$gray-color-dark;
       padding: variables.$unit-1 variables.$unit-2;
       text-decoration: none;
+
       &:focus,
       &:hover {
         color: variables.$primary-color;
       }
     }
+
     &.active {
       & > a {
         color: color.adjust(variables.$gray-color-dark, $lightness: -10%);
         font-weight: bold;
+
         &:focus,
         &:hover {
           color: variables.$primary-color;

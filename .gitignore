@@ -3,11 +3,12 @@ node_modules/
 yarn.lock
 package-lock.json
 .*
-__snapshots__/__diff__/
-__snapshots__/__updated__/
+tests/snapshots/__diff__/
+tests/snapshots/__updated__/
 !.csscomb.json
 !.gitignore
 !.gitattributes
 !.hound.yml
 !.scss-lint.yml
+!.stylelintignore
 !.stylelintrc.json

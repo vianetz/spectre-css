@@ -11,15 +11,19 @@
   .tile-action {
     flex: 0 0 auto;
   }
+
   .tile-content {
     flex: 1 1 auto;
+
     &:not(:first-child) {
       padding-left: variables.$unit-2;
     }
+
     &:not(:last-child) {
       padding-right: variables.$unit-2;
     }
   }
+
   .tile-title,
   .tile-subtitle {
     line-height: variables.$line-height;

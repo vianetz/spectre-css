@@ -1394,12 +1394,9 @@ code {
 .video-responsive object,
 .video-responsive embed {
   border: 0;
-  bottom: 0;
   height: 100%;
-  left: 0;
+  inset: 0;
   position: absolute;
-  right: 0;
-  top: 0;
   width: 100%;
 }
 
@@ -2381,18 +2378,15 @@ summary.accordion-header::-webkit-details-marker {
 
 .modal {
   align-items: center;
-  bottom: 0;
   display: none;
   -ms-flex-align: center;
   -ms-flex-pack: center;
+  inset: 0;
   justify-content: center;
-  left: 0;
   opacity: 0;
   overflow: hidden;
   padding: .4rem;
   position: fixed;
-  right: 0;
-  top: 0;
 }
 .modal:target,
 .modal.active {
@@ -2404,13 +2398,10 @@ summary.accordion-header::-webkit-details-marker {
 .modal:target .modal-overlay,
 .modal.active .modal-overlay {
   background: rgba(247, 248, 249, .75);
-  bottom: 0;
   cursor: default;
   display: block;
-  left: 0;
+  inset: 0;
   position: absolute;
-  right: 0;
-  top: 0;
 }
 .modal:target .modal-container,
 .modal.active .modal-container {

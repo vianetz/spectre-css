@@ -31,11 +31,13 @@
       margin: 0 (-(variables.$unit-2));
       padding: variables.$unit-1 variables.$unit-2;
       text-decoration: none;
+
       &:focus,
       &:hover {
         background: variables.$secondary-color;
         color: variables.$primary-color;
       }
+
       &:active,
       &.active {
         background: variables.$secondary-color;

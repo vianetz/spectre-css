@@ -103,15 +103,19 @@
   0% {
     width: 0;
   }
+
   25% {
     width: variables.$unit-12;
   }
+
   50% {
     width: variables.$unit-4;
   }
+
   75% {
     width: variables.$unit-6;
   }
+
   100% {
     width: 0;
   }

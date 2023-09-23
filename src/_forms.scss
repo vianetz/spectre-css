@@ -56,10 +56,12 @@ legend {
   position: relative;
   transition: background .2s, border .2s, box-shadow .2s, color .2s;
   width: 100%;
+
   &:focus {
     @include shadow.control-shadow();
     border-color: variables.$primary-color;
   }
+
   &::placeholder {
     color: variables.$gray-color;
   }
@@ -129,10 +131,12 @@ textarea.form-input {
   vertical-align: middle;
   width: 100%;
   background: variables.$bg-color-light; 
+
   &:focus {
     @include shadow.control-shadow();
     border-color: variables.$primary-color;
   }
+
   &::-ms-expand {
     display: none;
   }
@@ -160,6 +164,7 @@ textarea.form-input {
       padding: variables.$unit-h variables.$unit-1;
     }
   }
+
   &:not([multiple]):not([size]) {
     background: variables.$bg-color-light url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23667189'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right .35rem center / .4rem .5rem;
     padding-right: variables.$control-icon-size + variables.$control-padding-x;
@@ -220,10 +225,12 @@ textarea.form-input {
     overflow: hidden;
     position: absolute;
     width: 1px;
+
     &:focus + .form-icon {
       @include shadow.control-shadow();
       border-color: variables.$primary-color;
     }
+
     &:checked + .form-icon {
       background: variables.$primary-color;
       border-color: variables.$primary-color;
@@ -266,6 +273,7 @@ textarea.form-input {
     }
   }
 }
+
 .form-checkbox {
   .form-icon {
     border-radius: variables.$border-radius;
@@ -289,9 +297,11 @@ textarea.form-input {
         width: 6px;
       }
     }
+
     &:indeterminate + .form-icon {
       background: variables.$primary-color;
       border-color: variables.$primary-color;
+
       &::before {
         background: variables.$bg-color-light;
         content: "";
@@ -306,6 +316,7 @@ textarea.form-input {
     }
   }
 }
+
 .form-radio {
   .form-icon {
     border-radius: 50%;
@@ -340,6 +351,7 @@ textarea.form-input {
     left: 0;
     top: (variables.$control-size-sm - variables.$unit-4) * .5 - variables.$border-width;
     width: variables.$unit-8;
+
     &::before {
       background: variables.$bg-color-light;
       border-radius: 50%;
@@ -360,6 +372,7 @@ textarea.form-input {
         left: 14px;
       }
     }
+
     &:active + .form-icon {
       &::before {
         background: variables.$bg-color;
@@ -409,15 +422,18 @@ textarea.form-input {
       border-bottom-right-radius: 0;
       border-top-right-radius: 0;
     }
+
     &:not(:first-child):not(:last-child) {
       border-radius: 0;
       margin-left: -(variables.$border-width);
     }
+
     &:last-child:not(:first-child) {
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
       margin-left: -(variables.$border-width);
     }
+
     &:focus {
       z-index: variables.$zindex-0 + 1;
     }
@@ -439,6 +455,7 @@ textarea.form-input {
   &.is-success {
     background: color.adjust(variables.$success-color, $lightness: 53%);
     border-color: variables.$success-color;
+
     &:focus {
       @include shadow.control-shadow(variables.$success-color);
     }
@@ -448,6 +465,7 @@ textarea.form-input {
   &.is-error {
     background: color.adjust(variables.$error-color, $lightness: 53%);
     border-color: variables.$error-color;
+
     &:focus {
       @include shadow.control-shadow(variables.$error-color);
     }
@@ -494,6 +512,7 @@ textarea.form-input {
   &:not(:placeholder-shown) {
     &:invalid {
       border-color: variables.$error-color;
+
       &:focus {
         @include shadow.control-shadow(variables.$error-color);
         background: color.adjust(variables.$error-color, $lightness: 53%);

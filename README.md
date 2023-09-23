@@ -2,7 +2,7 @@
   <img src="https://vianetz.github.io/spectre-css/img/spectre-logo.svg" width="72" height="72" alt="spectre.css">
 </a>
 
-## Spectre.css (fork)
+## Spectre.css (maintained fork)
 
 Spectre.css is a lightweight, responsive and modern CSS framework.
 
@@ -14,15 +14,24 @@ Spectre is a side project based on years of CSS development work on a large web 
 
 ## Purpose of this fork
 
-As the original author unfortunately is [no longer responsive](https://github.com/picturepan2/spectre/issues/684) I started this fork of Spectre.css to continue development and update with latest browser versions.
+As the original repository unfortunately is [no longer maintained](https://github.com/picturepan2/spectre/issues/684), I started this fork of Spectre.css to continue development and update with latest browser versions.
 
-My **main goal** for this fork is to keep the spirit of the excellent original work by the author, which means
+My **main goal** for this fork is to build on the spirit of the excellent work by the original author and make the framework even better, which means
 - keep it extremely lightweight, simple and minimal
 - stay up-to-date with latest browser developments
+- assure high quality of all changes
 
-Of course I'm happy to accept pull requests for bugfix or feature proposals.
+### Major Changes ✨
 
-## Getting started
+Next to several bug fixes this fork has these major improvements compared to the [beautiful original work](https://github.com/picturepan2/spectre):
+- [x] use Dart SASS with `@use` at-rules
+- [x] automated visual tests and build & security checks
+- [x] up-to-date libraries and latest CSS improvements
+- [ ] expose SASS variables as CSS variables
+
+Of course I'm happy to accept pull requests for bugfix or feature proposals. Any contributions are welcome!
+
+## Getting started 🏁
 
 There are 4 ways to get started with Spectre CSS framework in your projects. You can either manually install or use NPM, Yarn and Bower.
 
