@@ -353,6 +353,10 @@ a:visited {
   color: #807fe2;
 }
 
+address {
+  font-style: normal;
+}
+
 h1,
 h2,
 h3,
