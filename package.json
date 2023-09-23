@@ -1,5 +1,5 @@
 {
-  "name": "spectre.css",
+  "name": "@vianetz/spectre.css",
   "version": "1.0.0",
   "description": "Spectre.css: A lightweight, responsive and modern CSS framework",
   "homepage": "https://vianetz.github.io/spectre-css",
@@ -7,7 +7,7 @@
   "main": "dist/spectre.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vianetz/spectre-css.git"
+    "url": "git+https://github.com/vianetz/spectre-css.git"
   },
   "license": "MIT",
   "keywords": [
@@ -62,6 +62,10 @@
     "test:visual": "osnap download-chromium && osnap --no-create --no-skip --no-only",
     "ci": "start-server-and-test start-server http://127.0.0.1:8080 test"
   },
+  "files": [
+    "src/*",
+    "dist/*"
+  ],
   "bundlesize": [
     {
       "path": "./dist/spectre.min.css",

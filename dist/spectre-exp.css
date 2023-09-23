@@ -500,8 +500,8 @@
   flex-wrap: wrap;
 }
 .meter {
-  -webkit-appearance: none;
-  appearance: none;
+  -webkit-appearance: meter;
+  appearance: meter;
   background: #f7f8f9;
   border: 0;
   border-radius: .1rem;
