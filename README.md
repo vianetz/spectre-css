@@ -2,7 +2,7 @@
   <img src="https://vianetz.github.io/spectre-css/img/spectre-logo.svg" width="72" height="72" alt="spectre.css">
 </a>
 
-## Spectre.css (fork)
+## Spectre.css (maintained fork)
 
 Spectre.css is a lightweight, responsive and modern CSS framework.
 
@@ -20,7 +20,14 @@ My **main goal** for this fork is to keep the spirit of the excellent original w
 - keep it extremely lightweight, simple and minimal
 - stay up-to-date with latest browser developments
 
-Of course I'm happy to accept pull requests for bugfix or feature proposals.
+### Major Changes
+
+This fork has the following major improvements compared to the [original work](https://github.com/picturepan2/spectre):
+- [x] use Dart SASS with `@use` at-rules
+- [x] stay up-to-date with latest browser developments
+- [ ] expose SASS variables as CSS variables
+
+Of course I'm happy to accept pull requests for bugfix or feature proposals. Any contributions are welcome!
 
 ## Getting started
 
