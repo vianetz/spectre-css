@@ -2,6 +2,8 @@
   "baseUrl": "http://127.0.0.1:8080",
   "fullScreen": true,
   "threshold": 10,
+  "snapshotDirectory": "./tests/snapshots",
+  "testPattern": "./tests/**/*.osnap.json",
   "defaultSizes": [
     { "name": "xxl", "width": 1600, "height": 900 }
   ]
