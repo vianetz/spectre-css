@@ -10,7 +10,9 @@
 }
 
 fieldset {
-  margin-bottom: variables.$layout-spacing-lg;
+  border: 0;
+  margin: 0 0 variables.$layout-spacing-lg 0;
+  padding: 0;
 }
 
 legend {

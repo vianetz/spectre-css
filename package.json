@@ -71,5 +71,8 @@
       "path": "./dist/spectre.min.css",
       "maxSize": "10 kB"
     }
-  ]
+  ],
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }
