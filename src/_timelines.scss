@@ -6,6 +6,7 @@
     display: flex;
     margin-bottom: variables.$unit-6;
     position: relative;
+
     &::before {
       background: variables.$border-color;
       content: "";
@@ -34,6 +35,7 @@
       justify-content: center;
       text-align: center;
       width: variables.$unit-6;
+
       &::before {
         border: variables.$border-width-lg solid variables.$primary-color;
         border-radius: 50%;
@@ -49,6 +51,7 @@
       &.icon-lg {
         background: variables.$primary-color;
         line-height: variables.$line-height;
+
         &::before {
           content: none;
         }

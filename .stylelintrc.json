@@ -10,9 +10,12 @@
     "declaration-empty-line-before": null,
     "no-descending-specificity": null,
     "number-max-precision": 8,
+    "scss/at-mixin-argumentless-call-parentheses": "always",
     "scss/operator-no-unspaced": null,
     "scss/dollar-variable-empty-line-before": null,
     "selector-pseudo-element-colon-notation": "double",
-    "selector-class-pattern": "[\\-\\_a-z0-9]"
+    "selector-class-pattern": "[\\-\\_a-z0-9]",
+    "selector-not-notation": "simple",
+    "value-keyword-case": ["lower", {"camelCaseSvgKeywords": true} ]
   }
 }

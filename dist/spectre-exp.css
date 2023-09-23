@@ -585,13 +585,10 @@
   background: rgba(48, 55, 66, .1);
   border-color: transparent;
   border-radius: 0;
-  bottom: 0;
   display: none;
   height: 100%;
-  left: 0;
+  inset: 0;
   position: fixed;
-  right: 0;
-  top: 0;
   width: 100%;
 }
 .off-canvas .off-canvas-sidebar:target,
@@ -801,6 +798,7 @@
 }
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
+  appearance: none;
   background: #5755d9;
   border: 0;
   border-radius: 50%;

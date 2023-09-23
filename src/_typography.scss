@@ -16,6 +16,7 @@ h6 {
   margin-bottom: .5em;
   margin-top: 0;
 }
+
 .h1,
 .h2,
 .h3,
@@ -24,26 +25,32 @@ h6 {
 .h6 {
   font-weight: 500;
 }
+
 h1,
 .h1 {
   font-size: 2rem;
 }
+
 h2,
 .h2 {
   font-size: 1.6rem;
 }
+
 h3,
 .h3 {
   font-size: 1.4rem;
 }
+
 h4,
 .h4 {
   font-size: 1.2rem;
 }
+
 h5,
 .h5 {
   font-size: 1rem;
 }
+
 h6,
 .h6 {
   font-size: .8rem;
@@ -127,6 +134,7 @@ dl {
   dt {
     font-weight: bold;
   }
+
   dd {
     margin: variables.$unit-2 0 variables.$unit-4 0;
   }

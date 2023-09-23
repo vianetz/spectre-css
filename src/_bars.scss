@@ -30,6 +30,7 @@
       border-bottom-left-radius: variables.$border-radius;
       border-top-left-radius: variables.$border-radius;
     }
+
     &:last-child {
       border-bottom-right-radius: variables.$border-radius;
       border-top-right-radius: variables.$border-radius;
@@ -48,6 +49,7 @@
     left: 0;
     padding: 0;
     position: absolute;
+
     &:not(:last-child):first-child {
       background: variables.$bg-color-dark;
       z-index: variables.$zindex-0;
