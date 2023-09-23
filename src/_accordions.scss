@@ -1,16 +1,26 @@
 @use "variables";
+@use "mixins/shadow";
 
 // Accordions
 .accordion {
+  [type="radio"],
+  [type="checkbox"] {
+    &:focus {
+      + label {
+        @include shadow.control-shadow();
+      }
+    }
+  }
+
   input:checked ~,
   &[open] {
-    & .accordion-header > {
+    .accordion-header > {
       .icon:first-child {
         transform: rotate(90deg);
       }
     }
 
-    & .accordion-body {
+    .accordion-body {
       max-height: 50rem;
     }
   }
