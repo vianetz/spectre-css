@@ -5,6 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.0.0] - 2023-09-23
+
+## Added
+- npm package including workflow for package publish
+- automated visual tests using [osnap](https://github.com/eWert-Online/osnap) (https://github.com/vianetz/spectre-css/pull/14)
+
+## Fixed
+- Meter element (https://github.com/vianetz/spectre-css/pull/12)
+
+## Changed
+- updated [normalize.css library](https://necolas.github.io/normalize.css/) to version 8.0.1 (https://github.com/vianetz/spectre-css/pull/16)
+- switched to [Stylelint](https://stylelint.io/) for SASS linting (https://github.com/vianetz/spectre-css/pull/15)
+
+## Removed
+- support for LESS
+
 ## [v1.0.0] - 2023-09-22
 
 ### Added
