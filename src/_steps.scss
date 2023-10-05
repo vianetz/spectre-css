@@ -1,9 +1,9 @@
 @use "variables";
 
-$primary-color: variables.$primary-color !default;
-$secondary-color: variables.$light-color !default;
+$active-color: variables.$primary-color !default;
+$highlight-color: variables.$light-color !default;
 $line-color: variables.$border-color !default;
-$disabled-link-color: variables.$gray-color !default;
+$link-color: variables.$gray-color !default;
 
 // Steps
 .step {
@@ -21,7 +21,7 @@ $disabled-link-color: variables.$gray-color !default;
     position: relative;
 
     &:not(:first-child)::before {
-      background: $primary-color;
+      background: $active-color;
       content: "";
       height: 2px;
       left: -50%;
@@ -31,14 +31,14 @@ $disabled-link-color: variables.$gray-color !default;
     }
 
     a {
-      color: $primary-color;
+      color: $active-color;
       display: inline-block;
       padding: 20px 10px 0;
       text-decoration: none;
 
       &::before {
-        background: $primary-color;
-        border: variables.$border-width-lg solid $secondary-color;
+        background: $active-color;
+        border: variables.$border-width-lg solid $highlight-color;
         border-radius: 50%;
         content: "";
         display: block;
@@ -55,8 +55,8 @@ $disabled-link-color: variables.$gray-color !default;
     &.active {
       a {
         &::before {
-          background: $secondary-color;
-          border: variables.$border-width-lg solid $primary-color;
+          background: $highlight-color;
+          border: variables.$border-width-lg solid $active-color;
         }
       }
 
@@ -66,7 +66,7 @@ $disabled-link-color: variables.$gray-color !default;
         }
 
         a {
-          color: $disabled-link-color;
+          color: $link-color;
 
           &::before {
             background: $line-color;
