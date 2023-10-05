@@ -1,5 +1,10 @@
 @use "variables";
 
+$primary-color: variables.$primary-color !default;
+$secondary-color: variables.$light-color !default;
+$line-color: variables.$border-color !default;
+$disabled-link-color: variables.$gray-color !default;
+
 // Steps
 .step {
   display: flex;
@@ -16,7 +21,7 @@
     position: relative;
 
     &:not(:first-child)::before {
-      background: variables.$primary-color;
+      background: $primary-color;
       content: "";
       height: 2px;
       left: -50%;
@@ -26,14 +31,14 @@
     }
 
     a {
-      color: variables.$primary-color;
+      color: $primary-color;
       display: inline-block;
       padding: 20px 10px 0;
       text-decoration: none;
 
       &::before {
-        background: variables.$primary-color;
-        border: variables.$border-width-lg solid variables.$light-color;
+        background: $primary-color;
+        border: variables.$border-width-lg solid $secondary-color;
         border-radius: 50%;
         content: "";
         display: block;
@@ -50,21 +55,21 @@
     &.active {
       a {
         &::before {
-          background: variables.$light-color;
-          border: variables.$border-width-lg solid variables.$primary-color;
+          background: $secondary-color;
+          border: variables.$border-width-lg solid $primary-color;
         }
       }
 
       & ~ .step-item {
         &::before {
-          background: variables.$border-color;
+          background: $line-color;
         }
 
         a {
-          color: variables.$gray-color;
+          color: $disabled-link-color;
 
           &::before {
-            background: variables.$border-color;
+            background: $line-color;
           }
         }
       }
