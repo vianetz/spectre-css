@@ -20,8 +20,8 @@ devDependencies:
     specifier: ^4.0.2
     version: 4.0.2
   gulp-autoprefixer:
-    specifier: ^8.0.0
-    version: 8.0.0(gulp@4.0.2)
+    specifier: ^9.0.0
+    version: 9.0.0(gulp@4.0.2)
   gulp-clean-css:
     specifier: ^4.3.0
     version: 4.3.0
@@ -198,12 +198,29 @@ packages:
     engines: {node: '>= 10'}
     dev: true
 
+  /@types/expect@1.20.4:
+    resolution: {integrity: sha512-Q5Vn3yjTDyCMV50TB6VRIbQNxSE4OmZR86VSbGaNpfUolm0iePBB4KdEEHmxoY5sT2+2DIvXW0rvMDP2nHZ4Mg==}
+    dev: true
+
   /@types/minimist@1.2.2:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: true
 
+  /@types/node@20.8.10:
+    resolution: {integrity: sha512-TlgT8JntpcbmKUFzjhsyhGfP2fsiz1Mv56im6enJ905xG1DAYesxJaeSbGqQmAw8OWPdhyJGhGSQGKRNJ45u9w==}
+    dependencies:
+      undici-types: 5.26.5
+    dev: true
+
   /@types/normalize-package-data@2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
+    dev: true
+
+  /@types/vinyl@2.0.9:
+    resolution: {integrity: sha512-KCr4aTEUkzSF89qw09e2oxsC/RXXT3K5ZPv4gvj3XTiWVrxNoi7WrqNTahNE/Hul5C9z3B8w+yWNTQgua12oag==}
+    dependencies:
+      '@types/expect': 1.20.4
+      '@types/node': 20.8.10
     dev: true
 
   /abab@2.0.6:
@@ -513,7 +530,7 @@ packages:
     hasBin: true
     dev: true
 
-  /autoprefixer@10.4.16(postcss@8.4.30):
+  /autoprefixer@10.4.16(postcss@8.4.31):
     resolution: {integrity: sha512-7vd3UC6xKp0HLfua5IjZlcXvGAGy7cBAXTg2lyQ/8WpNhd6SiZ8Be+xm3FyBSYJx5GKcpRCzBh7RH4/0dnY+uQ==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
@@ -525,7 +542,7 @@ packages:
       fraction.js: 4.3.6
       normalize-range: 0.1.2
       picocolors: 1.0.0
-      postcss: 8.4.30
+      postcss: 8.4.31
       postcss-value-parser: 4.2.0
     dev: true
 
@@ -832,6 +849,11 @@ packages:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
+    dev: true
+
+  /chalk@5.3.0:
+    resolution: {integrity: sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
     dev: true
 
   /character-parser@2.2.0:
@@ -1343,6 +1365,11 @@ packages:
     dependencies:
       is-plain-object: 2.0.4
       object.defaults: 1.1.0
+    dev: true
+
+  /easy-transform-stream@1.0.1:
+    resolution: {integrity: sha512-ktkaa6XR7COAR3oj02CF3IOgz2m1hCaY3SfzvKT4Svt2MhHw9XCt+ncJNWfe2TGz31iqzNGZ8spdKQflj+Rlog==}
+    engines: {node: '>=14.16'}
     dev: true
 
   /electron-to-chromium@1.4.527:
@@ -1972,21 +1999,19 @@ packages:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
     dev: true
 
-  /gulp-autoprefixer@8.0.0(gulp@4.0.2):
-    resolution: {integrity: sha512-sVR++PIaXpa81p52dmmA/jt50bw0egmylK5mjagfgOJ8uLDGaF9tHyzvetkY9Uo0gBZUS5sVqN3kX/GlUKOyog==}
-    engines: {node: '>=12'}
+  /gulp-autoprefixer@9.0.0(gulp@4.0.2):
+    resolution: {integrity: sha512-lVQz5fqdjm4RMB1O3xLPtaZNMbFFoGKbV+SN3NJgT9X+PIyYld7dXARpoXIKEZAqE9WC2SoDQU0mxqZahWq07A==}
+    engines: {node: '>=18'}
     peerDependencies:
       gulp: '>=4'
     peerDependenciesMeta:
       gulp:
         optional: true
     dependencies:
-      autoprefixer: 10.4.16(postcss@8.4.30)
-      fancy-log: 1.3.3
+      autoprefixer: 10.4.16(postcss@8.4.31)
       gulp: 4.0.2
-      plugin-error: 1.0.1
-      postcss: 8.4.30
-      through2: 4.0.2
+      gulp-plugin-extras: 0.2.2
+      postcss: 8.4.31
       vinyl-sourcemaps-apply: 0.2.1
     dev: true
 
@@ -2035,6 +2060,15 @@ packages:
       fancy-log: 1.3.3
       plugin-error: 0.1.2
       through2: 2.0.5
+    dev: true
+
+  /gulp-plugin-extras@0.2.2:
+    resolution: {integrity: sha512-0gssXzTNrrOocYBWN4qOZqd03cz3bxhjxVUPZV9iJdBR0ZZbwMQO/OT8hZChYoc9GjKaA5meaqDr6CjkmKA7BA==}
+    engines: {node: '>=18'}
+    dependencies:
+      '@types/vinyl': 2.0.9
+      chalk: 5.3.0
+      easy-transform-stream: 1.0.1
     dev: true
 
   /gulp-pug@5.0.0:
@@ -3564,6 +3598,15 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
+  /postcss@8.4.31:
+    resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
+    engines: {node: ^10 || ^12 || >=14}
+    dependencies:
+      nanoid: 3.3.6
+      picocolors: 1.0.0
+      source-map-js: 1.0.2
+    dev: true
+
   /prebuild-install@5.3.6:
     resolution: {integrity: sha512-s8Aai8++QQGi4sSbs/M1Qku62PFK49Jm1CbgXklGz4nmHveDq0wzJkg7Na5QbnO1uNH8K7iqx2EQ/mV0MZEmOg==}
     engines: {node: '>=6'}
@@ -4727,6 +4770,10 @@ packages:
       object.defaults: 1.1.0
       object.reduce: 1.0.1
       undertaker-registry: 1.0.1
+    dev: true
+
+  /undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
     dev: true
 
   /union-value@1.0.1:
