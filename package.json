@@ -30,7 +30,7 @@
     "@space-labs/osnap": "^1.5.3",
     "bundlesize": "^0.18.1",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
+    "gulp-autoprefixer": "^9.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-csscomb": "^3.1.0",
     "gulp-pug": "^5.0.0",
