@@ -16,18 +16,19 @@ Spectre is a side project based on years of CSS development work on a large web 
 
 As the original repository unfortunately is [no longer maintained](https://github.com/picturepan2/spectre/issues/684), I started this fork of Spectre.css to continue development and update with latest browser versions.
 
-My **main goal** for this fork is to build on the spirit of the excellent work by the original author and make the framework even better, which means
-- keep it extremely lightweight, simple and minimal
+My **main goal** for this fork is to build on the spirit of the excellent work by the original author and bring the framework to 2023, which means
+- keep it **simple, minimal and visually appealing**
 - stay up-to-date with latest browser developments
-- assure high quality of all changes
+- always assure high quality of changes
 
-### Major Changes ✨
+### Major Changes / Roadmap ✨
 
 Next to several bug fixes this fork has these major improvements compared to the [beautiful original work](https://github.com/picturepan2/spectre):
 - [x] use Dart SASS with `@use` at-rules
 - [x] automated visual tests and build & security checks
 - [x] up-to-date libraries and latest CSS improvements
 - [ ] expose SASS variables as CSS variables
+- [ ] Dark Mode
 
 Of course I'm happy to accept pull requests for bugfix or feature proposals. Any contributions are welcome!
 

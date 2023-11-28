@@ -1,10 +1,14 @@
 @use "variables";
 
+$border-radius: variables.$border-radius !default;
+$border-width: variables.$border-width !default;
+$border-color: variables.$border-color !default;
+
 // Cards
 .card {
   background: variables.$bg-color-light;
-  border: variables.$border-width solid variables.$border-color;
-  border-radius: variables.$border-radius;
+  border: $border-width solid $border-color;
+  border-radius: $border-radius;
   display: flex;
   flex-direction: column;
 
@@ -30,15 +34,15 @@
       padding-top: 0;
 
       img {
-        border-top-left-radius: variables.$border-radius;
-        border-top-right-radius: variables.$border-radius;
+        border-top-left-radius: $border-radius;
+        border-top-right-radius: $border-radius;
       }
     }
 
     &:last-child {
       img {
-        border-bottom-left-radius: variables.$border-radius;
-        border-bottom-right-radius: variables.$border-radius;
+        border-bottom-left-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
       }
     }
   }

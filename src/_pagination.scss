@@ -1,5 +1,7 @@
 @use "variables";
 
+$highlight-color: variables.$primary-color !default;
+
 // Pagination
 .pagination {
   display: flex;
@@ -23,7 +25,7 @@
 
       &:focus,
       &:hover {
-        color: variables.$primary-color;
+        color: $highlight-color;
       }
     }
 
@@ -37,7 +39,7 @@
 
     &.active {
       a {
-        background: variables.$primary-color;
+        background: $highlight-color;
         color: variables.$light-color;
       }
     }
