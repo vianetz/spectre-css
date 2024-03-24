@@ -15,7 +15,7 @@ block docs-content
     .docs-demo.columns
       .column.col-6.col-md-12
         .accordion
-          input#accordion-1(type="radio" name="accordion-radio" hidden="" checked="")
+          input#accordion-1(type="radio" name="accordion-radio" checked="" class="text-assistive")
           label.accordion-header.c-hand(for="accordion-1")
             i.icon.icon-arrow-right.mr-1
             | Elements
@@ -26,7 +26,7 @@ block docs-content
               li.menu-item
                 a(href="#accordions") Element 2
         .accordion
-          input#accordion-2(type="radio" name="accordion-radio" hidden="")
+          input#accordion-2(type="radio" name="accordion-radio" class="text-assistive")
           label.accordion-header.c-hand(for="accordion-2")
             i.icon.icon-arrow-right.mr-1
             | Layout
@@ -37,7 +37,7 @@ block docs-content
               li.menu-item
                 a(href="#accordions") Layout 2
         .accordion
-          input#accordion-3(type="radio" name="accordion-radio" hidden="")
+          input#accordion-3(type="radio" name="accordion-radio" class="text-assistive")
           label.accordion-header.c-hand(for="accordion-3")
             i.icon.icon-arrow-right.mr-1
             | Components
@@ -49,7 +49,7 @@ block docs-content
                 a(href="#accordions") Component 2
       .column.col-6.col-md-12
         .accordion
-          input#accordion-4(type="checkbox" name="accordion-checkbox" hidden="" checked="")
+          input#accordion-4(type="checkbox" name="accordion-checkbox" checked="" class="text-assistive")
           label.accordion-header.c-hand(for="accordion-4")
             | Elements
           .accordion-body
@@ -59,7 +59,7 @@ block docs-content
               li.menu-item
                 a(href="#accordions") Element 2
         .accordion
-          input#accordion-5(type="checkbox" name="accordion-checkbox" hidden="")
+          input#accordion-5(type="checkbox" name="accordion-checkbox" class="text-assistive")
           label.accordion-header.c-hand(for="accordion-5")
             | Layout
           .accordion-body
@@ -69,7 +69,7 @@ block docs-content
               li.menu-item
                 a(href="#accordions") Layout 2
         .accordion
-          input#accordion-6(type="checkbox" name="accordion-checkbox" hidden="")
+          input#accordion-6(type="checkbox" name="accordion-checkbox" class="text-assistive")
           label.accordion-header.c-hand(for="accordion-6")
             | Components
           .accordion-body
@@ -84,7 +84,7 @@ block docs-content
         :highlight(lang="html")
           <!-- standard Accordions example -->
           <div class="accordion">
-            <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+            <input type="checkbox" id="accordion-1" name="accordion-checkbox" class="text-assistive">
             <label class="accordion-header" for="accordion-1">
               <i class="icon icon-arrow-right mr-1"></i>
               Title
@@ -96,7 +96,7 @@ block docs-content
 
           <!-- mutually exclusive Accordions example (with same input names) -->
           <div class="accordion">
-            <input type="radio" id="accordion-1" name="accordion-radio" hidden>
+            <input type="radio" id="accordion-1" name="accordion-radio" class="text-assistive">
             <label class="accordion-header" for="accordion-1">
               Title
             </label>
